@@ -681,6 +681,103 @@ section {
 }
 
 /* =========================
+   NEWSLETTER BAR
+   ========================= */
+.newsletter-bar {
+    background: var(--text-dark);
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-bar-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.newsletter-bar-input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.newsletter-bar-input {
+    min-width: 280px;
+    padding: 11px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.newsletter-bar-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-bar-input:focus {
+    outline: none;
+    border-color: var(--accent-pink);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.newsletter-bar-button {
+    padding: 11px 26px;
+    background: var(--accent-pink);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-bar-button:hover {
+    background: var(--primary-blue);
+}
+
+@media (max-width: 991px) {
+    .newsletter-bar {
+        padding: 30px 0;
+    }
+
+    .newsletter-bar .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-bar .col-auto {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .newsletter-bar-title {
+        margin-bottom: 1rem !important;
+    }
+
+    .newsletter-bar-input {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-bar-input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-bar-button {
+        width: 100%;
+    }
+}
+
+/* =========================
    FOOTER BLOCK
    ========================= */
 .footer-block {
