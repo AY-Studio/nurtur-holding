@@ -225,6 +225,80 @@ section {
 }
 
 /* =========================
+   INTRO BLOCK
+   ========================= */
+.intro-block {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.intro-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    opacity: 0.85;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .intro-block {
+        padding: 50px 0;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
+   CONTACT BLOCK
+   ========================= */
+.contact-block {
+    background: linear-gradient(135deg, #fce4e8 0%, #f8d4da 100%);
+    padding: 100px 0;
+}
+
+.contact-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.contact-text {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .contact-block {
+        padding: 60px 0;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+}
+
+/* =========================
    BUTTONS
    ========================= */
 .btn {
