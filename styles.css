@@ -235,8 +235,31 @@ section {
    INTRO BLOCK
    ========================= */
 .intro-block {
-    background: var(--white);
-    padding: 80px 0;
+    background: linear-gradient(135deg, #fce4e8 0%, #f8d4da 100%);
+    padding: 120px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.intro-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(22, 53, 84, 0.70);
+    pointer-events: none;
+}
+
+.intro-block .container {
+    position: relative;
+    z-index: 1;
 }
 
 .intro-logo {
@@ -248,21 +271,22 @@ section {
 .intro-title {
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 400;
-    color: var(--text-dark);
+    color: var(--white);
     margin-bottom: 2rem;
 }
 
 .intro-text {
     font-size: 1.1rem;
-    color: var(--text-dark);
-    opacity: 0.85;
+    color: var(--white);
+    opacity: 0.95;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
 
 @media (max-width: 768px) {
     .intro-block {
-        padding: 50px 0;
+        padding: 80px 0;
+        min-height: auto;
     }
 
     .intro-title {
