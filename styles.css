@@ -376,6 +376,26 @@ section {
     transform: translateY(-2px);
 }
 
+/* Outline button on dark backgrounds */
+.intro-block .btn-outline,
+.hero-block .btn-outline {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.intro-block .btn-outline:hover,
+.hero-block .btn-outline:hover {
+    background: var(--white);
+    color: var(--text-dark);
+    border-color: var(--white);
+}
+
+/* Fixed width for intro/hero buttons */
+.intro-block .btn,
+.hero-block .btn {
+    min-width: 160px;
+}
+
 /* =========================
    FEATURE BLOCK
    ========================= */
